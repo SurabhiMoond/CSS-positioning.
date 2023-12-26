@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form </title>
+
+</head>
+<body>
+ <header>
+  <h2 style="text-align: center;">TechFusion 2024 Registration Form</h2>
+ </header>
+ <form style="padding-left: 50px;">
+  <fieldset> 
+    <legend>Details </legend> 
+  <label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+<br><br>
+
+  <label for="Lastname">Last Name</label>
+  <input type="text" id="Lastname" placeholder="Enter your Last name" required>
+  <br><br>
+
+  <label for="email">E-mail</label>
+  <input type="email" id="email" placeholder="Enter your email" >
+  <br><br>
+  <label for="phone">phone number </label>
+  <input type="number" id="phone" pattern="[0-9]+">
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend>Profile Type</legend>
+    <input type="radio" id="professional" name="profileType" value="professional" required>
+    <label for="professional">Professional</label>
+    <input type="radio" id="student" name="profileType" value="student" required>
+    <label for="student">Student</label>
+    <input type="radio" id="enthusiast" name="profileType" value="enthusiast" required>
+    <label for="enthusiast">Enthusiast</label>
+  <br><br>
+    <label for="areaOfInterest">area Of Interest</label><br>
+    <select id="areaOfInterest" name="areaOfInterest" required>
+      <option value="" disabled selected>Select your area of interest</option>
+      <option value="webDevelopment">Web Development</option>
+      <option value="dataScience">Data Science</option>
+      <option value="cloudComputing">Cloud Computing</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="cybersecurity">Cybersecurity</option>
+    </select>
+  
+<br>
+<label for="workshops"> workshops </label><br>
+
+<input type="checkbox" name="Intro to Quantum Computing" id="Intro to Quantum Computing">
+<label for="Intro to Quantum Computing">Intro to Quantum Computing</label><br>
+<input type="checkbox" name="Intro to Quantum Computing" id="workshops">
+<label for="Virtual Reality on the Web">Virtual Reality on the Web</label><br>
+<input type="checkbox" name="Virtual Reality on the Web" id="workshops">
+<label for="Cybersecurity 101">Cybersecurity 101</label><br>
+<input type="checkbox" name="Cybersecurity 101" id="workshops">
+<label for="AI in Medical Imaging">AI in Medical Imaging</label><br><br>
+<label for="additionalInfo">Additional Information </label><br>
+<textarea id="additionalInfo" name="additionalInfo" maxlength="300" rows="4" cols="50"></textarea>
+</fieldset>
+<br>
+<fieldset>
+  <legend>Preferred Days</legend><br>
+  <label for="day1"><input type="checkbox" id="day1"> Day 1</label>
+  <label for="day2"><input type="checkbox" id="day2"> Day 2</label>
+  <label for="day3"><input type="checkbox" id="day3"> Day 3</label>
+</fieldset><br>
+<fieldset>
+<legend>Meal Preference:  </legend>
+<input type="radio"id="Vegetarian" name="Meal Preference:"required>
+<label for="Vegetarian">Vegetarian</label><br>
+<input type="radio" id="Non-Vegetarian" name="Meal Preference:" required>
+<label for="Non-Vegetarian">Non-Vegetarian</label><br>
+<input type="radio"id="Vegan" name="Meal Preference:" required>
+<label for="Vegan">Vegan</label><br>
+<input type="radio"id="No Preference" name="Meal Preference:" required>
+<label for="No Preference">No Preference</label>
+</fieldset>
+<fieldset>
+  <legend>Term & conditions</legend>
+  <p><label><input type="checkbox" name="agreeTerms" required> I agree to the terms and conditions.</label></p>
+</fieldset>
+
+<footer style="text-align: right;">
+  <button type="reset" style="border-radius: 5px; background-color: rgb(84, 77, 75); color: white;" onmouseover="this.style.backgroundColor='green';">Reset</button>
+  <button type="submit" style="border-radius: 5px; background-color: rgb(84, 77, 75); color: white;" onmouseover="this.style.backgroundColor= 'green'">Submit</button>
+</footer>
+</script>
+
+ </form>
+
+</body>
+</html>
